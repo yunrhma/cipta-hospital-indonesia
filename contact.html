@@ -2,21 +2,45 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Kontak - Cipta Hospital Indonesia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak • Cipta Hospital Indonesia</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>...</header>
-  <main>
-    <h1>Kontak Kami</h1>
-    <p>Hubungi kami di:</p>
-    <ul>
-      <li>Telp: (021) 12345678</li>
-      <li>Email: info@cipta-hospital.id</li>
-      <li>Jam Operasional: 08:00 - 21:00</li>
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="assets/images/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="register.html">Pendaftaran</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a class="active" href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Kontak Kami</h1>
+
+    <ul class="contact-info">
+      <li><strong>Telepon:</strong> (021) 123-456-78</li>
+      <li><strong>Email:</strong> info@cipta-hospital.id</li>
+      <li><strong>Jam Operasional:</strong> 08:00 – 21:00 (Senin–Minggu)</li>
     </ul>
-    <iframe src="https://maps.google.com" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <div class="map-container">
+      <!-- Ganti src dengan link embed alamat RS Anda -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126914.55811778681!2d106.6894294!3d-6.2000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDEnMDAuMCJF!5e0!3m2!1sid!2sid!4v1719999999999"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </main>
-  <footer>...</footer>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Cipta Hospital Indonesia</p>
+  </footer>
 </body>
 </html>

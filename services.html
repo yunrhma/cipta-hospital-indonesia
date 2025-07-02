@@ -3,37 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layanan Medis - Cipta Hospital Indonesia</title>
+  <title>Layanan Medis • Cipta Hospital Indonesia</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="assets/images/logo.png" alt="Logo Rumah Sakit" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="services.html" class="active">Layanan</a></li>
-        <li><a href="register.html">Pendaftaran</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="assets/images/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a class="active" href="services.html">Layanan</a></li>
+          <li><a href="register.html">Pendaftaran</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="layanan">
-      <h2>Layanan Medis</h2>
-      <ul>
-        <li><img src="assets/images/layanan-umum.png" alt="Poli Umum"> Poli Umum</li>
-        <li><img src="assets/images/layanan-gigi.png" alt="Poli Gigi"> Poli Gigi</li>
-        <li><img src="assets/images/layanan-anak.png" alt="Poli Anak"> Poli Anak</li>
-        <li><img src="assets/images/layanan-kandungan.png" alt="Poli Kandungan"> Poli Kandungan</li>
-        <li><img src="assets/images/layanan-ugd.png" alt="Unit Gawat Darurat"> Unit Gawat Darurat (UGD)</li>
-      </ul>
+  <main class="container">
+    <h1 class="page-title">Layanan Medis</h1>
+
+    <section class="layanan-grid">
+      <div class="card">
+        <img src="assets/images/layanan-umum.png" alt="Poli Umum">
+        <h3>Poli Umum</h3>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/layanan-gigi.png" alt="Poli Gigi">
+        <h3>Poli Gigi</h3>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/layanan-anak.png" alt="Poli Anak">
+        <h3>Poli Anak</h3>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/layanan-kandungan.png" alt="Poli Kandungan">
+        <h3>Poli Kandungan</h3>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/layanan-ugd.png" alt="UGD">
+        <h3>Unit Gawat Darurat</h3>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2025 Cipta Hospital Indonesia</p>
   </footer>
 </body>

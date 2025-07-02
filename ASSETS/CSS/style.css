@@ -1,53 +1,195 @@
-body {
-  font-family: Arial, sans-serif;
+/* ---------- RESET & GLOBAL ---------- */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background-color: #ffffff;
-  color: #003366;
+  padding: 0;
 }
 
-header {
-  background-color: #003366;
-  padding: 1em;
-  color: white;
+body {
+  font-family: Arial, sans-serif;
+  color: #003366;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: #003366;
+  color: #fff;
+}
+
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.75rem 0;
 }
 
-header .logo {
-  height: 50px;
-}
+.logo { height: 48px; }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1em;
+  gap: 1rem;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  transition: opacity 0.2s;
 }
 
+nav a:hover,
+nav a.active { opacity: 0.7; }
+
+/* ---------- HERO ---------- */
 .hero {
+  position: relative;
   text-align: center;
-  padding: 2em;
-  background-color: #e0e8f0;
+  color: #fff;
 }
 
-.hero img {
-  max-width: 100%;
-  border-radius: 10px;
+.banner-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
-.visi-misi {
-  padding: 2em;
-  background-color: #f0f6fb;
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-footer {
-  background-color: #003366;
-  color: white;
+.hero h1 {
+  font-size: 2.2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero p { margin-top: 0.5rem; }
+
+/* ---------- VISI MISI & PAGE TITLE ---------- */
+.page-title {
+  margin: 2rem 0 1rem;
   text-align: center;
-  padding: 1em;
+  font-size: 1.8rem;
+}
+
+.visi-misi,
+.about-intro { margin: 2rem 0; }
+
+.visi-misi ul { margin-left: 1.2rem; }
+
+/* ---------- LAYANAN GRID ---------- */
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-4px); }
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 { margin-top: 0.75rem; }
+
+/* ---------- FORM ---------- */
+.form-card {
+  max-width: 520px;
+  margin: 0 auto 3rem;
+  background: #f7f9fc;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.form-card label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-card button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: #003366;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.form-card button:hover { opacity: 0.8; }
+
+/* ---------- DOKTER GRID ---------- */
+.dokter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.dokter-grid .card { padding: 1.25rem; }
+
+/* ---------- CONTACT MAP ---------- */
+.contact-info li { margin-bottom: 0.5rem; }
+
+.map-container {
+  position: relative;
+  padding-bottom: 56%; /* 16:9 */
+  height: 0;
+  margin-top: 1.5rem;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
 }
